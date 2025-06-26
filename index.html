@@ -7,39 +7,36 @@
     <meta name="description" content="Photographe professionnel spécialisé en portraits, mariages et événements. Capturer l'émotion et créer des souvenirs uniques.">
     
     <!-- Preload -->
-    <link rel="preload" href="assets/fonts/PlayfairDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/css/styles.min.css" as="style">
+    <link rel="preload" href="css/styles.min.css" as="style">
+    <link rel="preload" href="js/main.min.js" as="script">
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
     
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600;700&display=swap">
 </head>
-<body class="is-preload">
-    <!-- Navigation Premium -->
+<body>
+    <!-- Navigation -->
     <header class="header">
         <div class="container">
-            <a href="/" class="logo" aria-label="Jojo Up Photographie">
-                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40">
-                    <!-- Votre logo SVG ici -->
-                </svg>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📷</span>
                 <span class="logo-text">Jojo <span>Up</span></span>
             </a>
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#home" class="active" data-text="Accueil">Accueil</a></li>
-                    <li><a href="#about" data-text="À propos">À propos</a></li>
-                    <li><a href="#portfolio" data-text="Portfolio">Portfolio</a></li>
-                    <li><a href="#services" data-text="Services">Services</a></li>
-                    <li><a href="#contact" data-text="Contact">Contact</a></li>
-                    <li class="nav-cta"><a href="#booking" class="btn btn-primary">Réserver</a></li>
+                    <li><a href="#home" class="nav-link active">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
             
@@ -51,170 +48,120 @@
         </div>
     </header>
 
-    <!-- Hero Section Cinématique -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-slider">
-            <!-- Slides avec images de fond en lazy loading -->
-            <div class="slide active" style="background-image: url('assets/img/hero-1.jpg')"></div>
-            <div class="slide" style="background-image: url('assets/img/hero-2.jpg')"></div>
+            <div class="slide active" style="background-image: url('images/hero-wedding.jpg')"></div>
+            <div class="slide" style="background-image: url('images/hero-portrait.jpg')"></div>
         </div>
         
         <div class="hero-content">
             <h1 class="hero-title">
                 <span class="line">Capturer</span>
-                <span class="line">l'essence</span>
-                <span class="line">de votre histoire</span>
+                <span class="line">vos moments</span>
+                <span class="line">inoubliables</span>
             </h1>
-            
-            <div class="hero-scroll">
-                <span>Explorer</span>
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M7 10l5 5 5-5z"/>
-                </svg>
-            </div>
+            <p class="hero-subtitle">Photographe professionnel spécialisé en mariages, portraits et événements</p>
+            <a href="#portfolio" class="btn btn-primary">Voir mon travail</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="arrow"></div>
         </div>
     </section>
 
-    <!-- Section À Propos Premium -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Rencontrez l'artiste</span>
-                <h2 class="section-title">À propos de moi</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="about-grid">
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <img src="assets/img/about.jpg" alt="Jojo Up photographe" loading="lazy">
-                    </div>
-                    <div class="about-badge">
-                        <span class="badge-number">12+</span>
-                        <span class="badge-text">ans d'expérience</span>
-                    </div>
-                </div>
-                
-                <div class="about-content">
-                    <h3>Bonjour, Je suis Jojo</h3>
-                    <p class="lead">Photographe professionnel basé à Paris, je me spécialise dans la création d'images qui racontent des histoires et captent l'émotion pure.</p>
-                    
-                    <div class="about-features">
-                        <div class="feature">
-                            <svg class="feature-icon"><use xlink:href="#icon-camera"></use></svg>
-                            <h4>Matériel Professionnel</h4>
-                            <p>Canon EOS R5, objectifs L-series, éclairage Profoto</p>
-                        </div>
-                        
-                        <div class="feature">
-                            <svg class="feature-icon"><use xlink:href="#icon-award"></use></svg>
-                            <h4>Certifié</h4>
-                            <p>Diplômé de l'École Nationale Supérieure de Photographie</p>
-                        </div>
-                    </div>
-                    
-                    <div class="signature">
-                        <img src="assets/img/signature.png" alt="Signature Jojo Up" loading="lazy">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="stats-grid">
-                <div class="stat">
-                    <span class="stat-number" data-count="850">0</span>
-                    <span class="stat-label">Clients Satisfaits</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" data-count="120">0</span>
-                    <span class="stat-label">Mariages</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" data-count="2400">0</span>
-                    <span class="stat-label">Photos Retouchées</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" data-count="15">0</span>
-                    <span class="stat-label">Pays Visités</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Élégant -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="section portfolio-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Mon travail</span>
-                <h2 class="section-title">Portfolio</h2>
-                <div class="section-divider"></div>
+                <h2 class="section-title">Mon Portfolio</h2>
+                <p class="section-subtitle">Explorez mes différentes galeries</p>
             </div>
             
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">Tout voir</button>
-                <button class="filter-btn" data-filter="portrait">Portraits</button>
                 <button class="filter-btn" data-filter="wedding">Mariages</button>
-                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="family">Famille</button>
+                <button class="filter-btn" data-filter="portrait">Portraits</button>
+                <button class="filter-btn" data-filter="event">Événements</button>
             </div>
             
-            <div class="portfolio-grid" id="lightgallery">
-                <!-- Les éléments du portfolio seront chargés dynamiquement -->
-            </div>
-            
-            <div class="text-center">
-                <a href="#" class="btn btn-outline">Voir plus de projets</a>
+            <div class="portfolio-grid" id="gallery">
+                <!-- Mariages -->
+                <a href="images/wedding-1.jpg" class="portfolio-item wedding" data-sub-html="<h4>Mariage à Paris</h4><p>Cérémonie en extérieur</p>">
+                    <img src="images/thumbs/wedding-1-thumb.jpg" alt="Mariage Paris">
+                    <div class="overlay">
+                        <h3>Mariage</h3>
+                        <p>Paris</p>
+                    </div>
+                </a>
+                
+                <a href="images/wedding-2.jpg" class="portfolio-item wedding" data-sub-html="<h4>Mariage Champêtre</h4><p>Première danse</p>">
+                    <img src="images/thumbs/wedding-2-thumb.jpg" alt="Mariage Champêtre">
+                    <div class="overlay">
+                        <h3>Mariage</h3>
+                        <p>Provence</p>
+                    </div>
+                </a>
+                
+                <!-- Famille -->
+                <a href="images/family-1.jpg" class="portfolio-item family" data-sub-html="<h4>Portrait de famille</h4><p>Session printemps</p>">
+                    <img src="images/thumbs/family-1-thumb.jpg" alt="Famille">
+                    <div class="overlay">
+                        <h3>Famille</h3>
+                        <p>Session printemps</p>
+                    </div>
+                </a>
+                
+                <a href="images/family-2.jpg" class="portfolio-item family" data-sub-html="<h4>Nouveau-né</h4><p>Premières photos</p>">
+                    <img src="images/thumbs/family-2-thumb.jpg" alt="Nouveau-né">
+                    <div class="overlay">
+                        <h3>Famille</h3>
+                        <p>Nouveau-né</p>
+                    </div>
+                </a>
+                
+                <!-- Portraits -->
+                <a href="images/portrait-1.jpg" class="portfolio-item portrait" data-sub-html="<h4>Portrait féminin</h4><p>Série 'Lumière naturelle'</p>">
+                    <img src="images/thumbs/portrait-1-thumb.jpg" alt="Portrait féminin">
+                    <div class="overlay">
+                        <h3>Portrait</h3>
+                        <p>Série lumière</p>
+                    </div>
+                </a>
+                
+                <a href="images/portrait-2.jpg" class="portfolio-item portrait" data-sub-html="<h4>Portrait masculin</h4><p>Session studio</p>">
+                    <img src="images/thumbs/portrait-2-thumb.jpg" alt="Portrait masculin">
+                    <div class="overlay">
+                        <h3>Portrait</h3>
+                        <p>Session studio</p>
+                    </div>
+                </a>
+                
+                <!-- Événements -->
+                <a href="images/event-1.jpg" class="portfolio-item event" data-sub-html="<h4>Concert</h4><p>Festival de musique</p>">
+                    <img src="images/thumbs/event-1-thumb.jpg" alt="Concert">
+                    <div class="overlay">
+                        <h3>Événement</h3>
+                        <p>Concert</p>
+                    </div>
+                </a>
+                
+                <a href="images/event-2.jpg" class="portfolio-item event" data-sub-html="<h4>Conférence</h4><p>Événement corporate</p>">
+                    <img src="images/thumbs/event-2-thumb.jpg" alt="Conférence">
+                    <div class="overlay">
+                        <h3>Événement</h3>
+                        <p>Corporate</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Autres sections... -->
 
-    <!-- Footer Premium -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-title">Jojo Up</h3>
-                    <p>Capturer la beauté des moments éphémères pour en faire des souvenirs éternels.</p>
-                    
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3 class="footer-title">Liens rapides</h3>
-                    <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3 class="footer-title">Contact</h3>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> 15 Rue de la Photographie, 75015 Paris</li>
-                        <li><i class="fas fa-phone-alt"></i> +33 6 12 34 56 78</li>
-                        <li><i class="fas fa-envelope"></i> contact@jojoup-photo.com</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2023 Jojo Up. Tous droits réservés.</p>
-                <div class="legal-links">
-                    <a href="#">Politique de confidentialité</a>
-                    <a href="#">Mentions légales</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
-    <script src="assets/js/main.min.js" defer></script>
+    <script src="js/main.min.js"></script>
 </body>
-          </html>
+</html>
