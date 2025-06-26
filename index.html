@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<!-- PAGE PRINCIPALE (index.html) -->
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ᴊᴏᴊᴏ υρ! - Photographe Professionnel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>ᴊᴏᴊᴏ υρ! - Photographe Créatif</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Bouton Mode Nuit Flottant -->
+    <div class="theme-switcher">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-toggle-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+        </label>
+        <span class="theme-tooltip">Mode Nuit</span>
+    </div>
+
     <!-- Header -->
-    <header>
+    <header id="header">
         <div class="container">
             <a href="index.html" class="logo">ᴊᴏᴊᴏ <span>υρ!</span></a>
             
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#home">Accueil</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#testimonials">Témoignages</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="reservation.html" class="btn">Réserver</a></li>
+                    <li><a href="#home" class="nav-link active">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 
-                <div class="theme-switcher">
-                    <input type="checkbox" id="theme-toggle">
-                    <label for="theme-toggle" class="theme-toggle-label">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                        <span class="ball"></span>
-                    </label>
-                </div>
-                
                 <div class="hamburger">
-                    <i class="fas fa-bars"></i>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
             </nav>
         </div>
@@ -44,347 +48,23 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Capturer vos moments précieux</h1>
-            <p>Photographe professionnel spécialisé dans les portraits, mariages et événements. Des souvenirs qui durent toute une vie.</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn">Contactez-moi</a>
-                <a href="#portfolio" class="btn btn-outline">Voir mon travail</a>
+            <h1 class="animate-pop-in">Capturez vos moments précieux</h1>
+            <p class="animate-pop-in">Photographe professionnel spécialisé dans les portraits, mariages et événements.</p>
+            <div class="hero-btns animate-pop-in">
+                <a href="#contact" class="btn btn-pulse">Contactez-moi</a>
+                <a href="#portfolio" class="btn btn-outline btn-float">Voir mon travail</a>
             </div>
+        </div>
+        <div class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">À propos de moi</h2>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Photographe Jojo">
-                </div>
-                <div class="about-text">
-                    <h3>Passionné par la photographie depuis plus de 10 ans</h3>
-                    <p>Je m'appelle Jonathan, mais tout le monde m'appelle Jojo. Depuis mon plus jeune âge, j'ai toujours été fasciné par la capacité de la photographie à capturer des émotions et des instants uniques.</p>
-                    <p>Mon approche est centrée sur la personne, avec un style naturel et authentique. Je privilégie les moments spontanés et les émotions vraies plutôt que les poses trop rigides.</p>
-                    
-                    <div class="commitments">
-                        <div class="commitment-item">
-                            <div class="commitment-icon"><i class="fas fa-check-circle"></i></div>
-                            <div>Matériel professionnel haut de gamme</div>
-                        </div>
-                        <div class="commitment-item">
-                            <div class="commitment-icon"><i class="fas fa-check-circle"></i></div>
-                            <div>Retouches soignées et naturelles</div>
-                        </div>
-                        <div class="commitment-item">
-                            <div class="commitment-icon"><i class="fas fa-check-circle"></i></div>
-                            <div>Rendu des photos sous 15 jours</div>
-                        </div>
-                        <div class="commitment-item">
-                            <div class="commitment-icon"><i class="fas fa-check-circle"></i></div>
-                            <div>Déplacements partout en France</div>
-                        </div>
-                    </div>
-                    
-                    <a href="#contact" class="btn">En savoir plus</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Sections suivantes (About, Portfolio, etc.) -->
+    <!-- ... (le reste de votre contenu HTML existant) ... -->
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="section-title">Mon Portfolio</h2>
-            
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="portrait">Portraits</button>
-                <button class="filter-btn" data-filter="wedding">Mariages</button>
-                <button class="filter-btn" data-filter="event">Événements</button>
-                <button class="filter-btn" data-filter="nature">Nature</button>
-            </div>
-            
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="portrait">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Portrait">
-                    <div class="portfolio-overlay">
-                        <h3>Portrait masculin</h3>
-                        <p>Studio photo</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="wedding">
-                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mariage">
-                    <div class="portfolio-overlay">
-                        <h3>Mariage à Paris</h3>
-                        <p>Photographie de mariage</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="event">
-                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Concert">
-                    <div class="portfolio-overlay">
-                        <h3>Concert</h3>
-                        <p>Événement musical</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="nature">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Paysage">
-                    <div class="portfolio-overlay">
-                        <h3>Paysage montagneux</h3>
-                        <p>Photographie nature</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="portrait">
-                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Portrait féminin">
-                    <div class="portfolio-overlay">
-                        <h3>Portrait féminin</h3>
-                        <p>Extérieur</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="wedding">
-                    <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mariage">
-                    <div class="portfolio-overlay">
-                        <h3>Mariage champêtre</h3>
-                        <p>Photographie de mariage</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">Mes Services</h2>
-            
-            <div class="pricing-table">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Portrait</h3>
-                        <p>Session individuelle ou duo</p>
-                    </div>
-                    <div class="pricing-body">
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> 1 heure de shooting</li>
-                            <li><i class="fas fa-check"></i> 15 photos retouchées</li>
-                            <li><i class="fas fa-check"></i> Toutes les photos brutes</li>
-                            <li><i class="fas fa-check"></i> Conseils poses et style</li>
-                            <li><i class="fas fa-check"></i> Studio ou extérieur</li>
-                        </ul>
-                        <div class="pricing-price">150€</div>
-                        <a href="reservation.html" class="btn pricing-btn">Réserver</a>
-                    </div>
-                </div>
-                
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Mariage</h3>
-                        <p>Votre grand jour</p>
-                    </div>
-                    <div class="pricing-body">
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> 8 heures de couverture</li>
-                            <li><i class="fas fa-check"></i> 50 photos retouchées</li>
-                            <li><i class="fas fa-check"></i> Toutes les photos brutes</li>
-                            <li><i class="fas fa-check"></i> Album photo premium</li>
-                            <li><i class="fas fa-check"></i> Shooting couple inclus</li>
-                        </ul>
-                        <div class="pricing-price">1200€</div>
-                        <a href="reservation.html" class="btn pricing-btn">Réserver</a>
-                    </div>
-                </div>
-                
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Événement</h3>
-                        <p>Professionnel ou privé</p>
-                    </div>
-                    <div class="pricing-body">
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> 4 heures de couverture</li>
-                            <li><i class="fas fa-check"></i> 30 photos retouchées</li>
-                            <li><i class="fas fa-check"></i> Toutes les photos brutes</li>
-                            <li><i class="fas fa-check"></i> Reportage dynamique</li>
-                            <li><i class="fas fa-check"></i> Forfait déplacement</li>
-                        </ul>
-                        <div class="pricing-price">500€</div>
-                        <a href="reservation.html" class="btn pricing-btn">Réserver</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2 class="section-title">Témoignages</h2>
-            
-            <div class="testimonial-container">
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client" class="testimonial-img">
-                        <div class="testimonial-author">
-                            <h4>Sophie Martin</h4>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>"Jojo a capturé notre mariage avec une sensibilité incroyable. Les photos sont magnifiques et reflètent parfaitement l'émotion de la journée. Il a su mettre tout le monde à l'aise, même les plus timides. Un vrai professionnel!"</p>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client" class="testimonial-img">
-                        <div class="testimonial-author">
-                            <h4>Thomas Leroy</h4>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>"Pour le lancement de notre entreprise, nous avions besoin de photos professionnelles. Jojo a parfaitement compris notre identité et a réalisé des images qui nous représentent à 100%. Rapidité, qualité et professionnalisme. Je recommande!"</p>
-                </div>
-                
-                <div class="testimonial-form">
-                    <h3>Laisser un témoignage</h3>
-                    <form id="addTestimonial">
-                        <div class="form-group">
-                            <label for="name">Votre nom</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="testimonial">Votre témoignage</label>
-                            <textarea id="testimonial" class="form-control" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Note</label>
-                            <div class="rating-input">
-                                <span>5</span>
-                                <div class="stars">
-                                    <i class="fas fa-star" data-rating="1"></i>
-                                    <i class="fas fa-star" data-rating="2"></i>
-                                    <i class="fas fa-star" data-rating="3"></i>
-                                    <i class="fas fa-star" data-rating="4"></i>
-                                    <i class="fas fa-star" data-rating="5"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-block">Envoyer</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contactez-moi</h2>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Adresse</h3>
-                            <p>15 Rue de la Photographie, 75015 Paris</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Téléphone</h3>
-                            <p>+33 6 12 34 56 78</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p>contact@jojoup-photo.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Horaires</h3>
-                            <p>Lundi-Vendredi: 9h-19h</p>
-                            <p>Samedi: 10h-18h</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <h3>Suivez-moi</h3>
-                        <div class="social-grid">
-                            <a href="#" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-                                <span>Instagram</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-                                <span>Facebook</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-                                <span>Twitter</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111505.png" alt="Pinterest">
-                                <span>Pinterest</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111383.png" alt="Behance">
-                                <span>Behance</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111425.png" alt="500px">
-                                <span>500px</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="contactName">Votre nom</label>
-                            <input type="text" id="contactName" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contactEmail">Votre email</label>
-                            <input type="email" id="contactEmail" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contactSubject">Sujet</label>
-                            <input type="text" id="contactSubject" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contactMessage">Votre message</label>
-                            <textarea id="contactMessage" class="form-control" required></textarea>
-                        </div>
-  
+    <script src="script.js"></script>
+</body>
+</html>/* ... (le reste de votre CSS existant) ... */
