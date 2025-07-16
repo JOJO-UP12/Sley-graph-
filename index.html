@@ -3,165 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jojo Up | Photographe Professionnel - Paris</title>
-    <meta name="description" content="Photographe professionnel spécialisé en portraits, mariages et événements. Capturer l'émotion et créer des souvenirs uniques.">
-    
-    <!-- Preload -->
-    <link rel="preload" href="css/styles.min.css" as="style">
-    <link rel="preload" href="js/main.min.js" as="script">
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
-    <link rel="stylesheet" href="css/styles.min.css">
-    
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600;700&display=swap">
+    <title>JOJO UP | Photographe Professionnel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">📷</span>
-                <span class="logo-text">Jojo <span>Up</span></span>
-            </a>
-            
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#home" class="nav-link active">Accueil</a></li>
-                    <li><a href="#about" class="nav-link">À propos</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-            
-            <button class="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+    <!-- Header / Navigation -->
+    <header class="sticky">
+        <nav>
+            <div class="logo">JOJO UP</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Réservation</a></li>
+                <li><a href="#testimonials">Avis</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-slider">
-            <div class="slide active" style="background-image: url('images/hero-wedding.jpg')"></div>
-            <div class="slide" style="background-image: url('images/hero-portrait.jpg')"></div>
-        </div>
-        
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="line">Capturer</span>
-                <span class="line">vos moments</span>
-                <span class="line">inoubliables</span>
-            </h1>
-            <p class="hero-subtitle">Photographe professionnel spécialisé en mariages, portraits et événements</p>
-            <a href="#portfolio" class="btn btn-primary">Voir mon travail</a>
+            <h1>Immortalisez vos instants précieux avec style et émotion</h1>
+            <p>Photographe passionné à Port-au-Prince – Disponible sur réservation.</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn">Voir Portfolio</a>
+                <a href="#booking" class="btn btn-primary">Réserver maintenant</a>
+            </div>
         </div>
-        
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="arrow"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-img">
+                <img src="https://via.placeholder.com/400x500" alt="JOJO UP Photographe">
+            </div>
+            <div class="about-text">
+                <h2>À propos de moi</h2>
+                <p class="animated-text">Je suis un passionné de la lumière, des émotions et de la beauté pure...</p>
+                <div class="equipment">
+                    <h3>Matériel utilisé :</h3>
+                    <ul>
+                        <li>Appareil : Canon EOS R5</li>
+                        <li>Objectifs : 50mm f/1.2, 24-70mm f/2.8</li>
+                        <li>Éclairage professionnel</li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="section portfolio-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Mon Portfolio</h2>
-                <p class="section-subtitle">Explorez mes différentes galeries</p>
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-categories">
+            <button class="category-btn active" data-category="all">Tous</button>
+            <button class="category-btn" data-category="wedding">Mariage 💍</button>
+            <button class="category-btn" data-category="family">Famille 👨‍👩‍👧‍👦</button>
+            <button class="category-btn" data-category="portrait">Portrait 🧍‍♂️</button>
+            <button class="category-btn" data-category="child">Enfant 👶</button>
+            <button class="category-btn" data-category="pregnancy">Grossesse 🤰</button>
+            <button class="category-btn" data-category="event">Événement 🎉</button>
+            <button class="category-btn" data-category="fashion">Mode / Style 👗</button>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Images will be loaded via JS -->
+        </div>
+        <div class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" src="" alt="">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Séance Express</h3>
+                <p>30 min – 10 photos HD</p>
+                <span class="price">$99</span>
             </div>
-            
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">Tout voir</button>
-                <button class="filter-btn" data-filter="wedding">Mariages</button>
-                <button class="filter-btn" data-filter="family">Famille</button>
-                <button class="filter-btn" data-filter="portrait">Portraits</button>
-                <button class="filter-btn" data-filter="event">Événements</button>
+            <div class="service-card">
+                <h3>Séance Premium</h3>
+                <p>1h – 25 photos retouchées</p>
+                <span class="price">$199</span>
             </div>
-            
-            <div class="portfolio-grid" id="gallery">
-                <!-- Mariages -->
-                <a href="images/wedding-1.jpg" class="portfolio-item wedding" data-sub-html="<h4>Mariage à Paris</h4><p>Cérémonie en extérieur</p>">
-                    <img src="images/thumbs/wedding-1-thumb.jpg" alt="Mariage Paris">
-                    <div class="overlay">
-                        <h3>Mariage</h3>
-                        <p>Paris</p>
-                    </div>
-                </a>
-                
-                <a href="images/wedding-2.jpg" class="portfolio-item wedding" data-sub-html="<h4>Mariage Champêtre</h4><p>Première danse</p>">
-                    <img src="images/thumbs/wedding-2-thumb.jpg" alt="Mariage Champêtre">
-                    <div class="overlay">
-                        <h3>Mariage</h3>
-                        <p>Provence</p>
-                    </div>
-                </a>
-                
-                <!-- Famille -->
-                <a href="images/family-1.jpg" class="portfolio-item family" data-sub-html="<h4>Portrait de famille</h4><p>Session printemps</p>">
-                    <img src="images/thumbs/family-1-thumb.jpg" alt="Famille">
-                    <div class="overlay">
-                        <h3>Famille</h3>
-                        <p>Session printemps</p>
-                    </div>
-                </a>
-                
-                <a href="images/family-2.jpg" class="portfolio-item family" data-sub-html="<h4>Nouveau-né</h4><p>Premières photos</p>">
-                    <img src="images/thumbs/family-2-thumb.jpg" alt="Nouveau-né">
-                    <div class="overlay">
-                        <h3>Famille</h3>
-                        <p>Nouveau-né</p>
-                    </div>
-                </a>
-                
-                <!-- Portraits -->
-                <a href="images/portrait-1.jpg" class="portfolio-item portrait" data-sub-html="<h4>Portrait féminin</h4><p>Série 'Lumière naturelle'</p>">
-                    <img src="images/thumbs/portrait-1-thumb.jpg" alt="Portrait féminin">
-                    <div class="overlay">
-                        <h3>Portrait</h3>
-                        <p>Série lumière</p>
-                    </div>
-                </a>
-                
-                <a href="images/portrait-2.jpg" class="portfolio-item portrait" data-sub-html="<h4>Portrait masculin</h4><p>Session studio</p>">
-                    <img src="images/thumbs/portrait-2-thumb.jpg" alt="Portrait masculin">
-                    <div class="overlay">
-                        <h3>Portrait</h3>
-                        <p>Session studio</p>
-                    </div>
-                </a>
-                
-                <!-- Événements -->
-                <a href="images/event-1.jpg" class="portfolio-item event" data-sub-html="<h4>Concert</h4><p>Festival de musique</p>">
-                    <img src="images/thumbs/event-1-thumb.jpg" alt="Concert">
-                    <div class="overlay">
-                        <h3>Événement</h3>
-                        <p>Concert</p>
-                    </div>
-                </a>
-                
-                <a href="images/event-2.jpg" class="portfolio-item event" data-sub-html="<h4>Conférence</h4><p>Événement corporate</p>">
-                    <img src="images/thumbs/event-2-thumb.jpg" alt="Conférence">
-                    <div class="overlay">
-                        <h3>Événement</h3>
-                        <p>Corporate</p>
-                    </div>
-                </a>
+            <div class="service-card">
+                <h3>Pack Mariage</h3>
+                <p>Journée complète, vidéo</p>
+                <span class="price">$999</span>
+            </div>
+            <div class="service-card">
+                <h3>Événements privés</h3>
+                <p>Sur devis</p>
+                <span class="price">Contact</span>
             </div>
         </div>
     </section>
 
-    <!-- Autres sections... -->
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2>Réservation</h2>
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Type de séance</label>
+                <select id="service" required>
+                    <option value="">-- Sélectionnez --</option>
+                    <option value="express">Séance Express</option>
+                    <option value="premium">Séance Premium</option>
+                    <option value="wedding">Pack Mariage</option>
+                    <option value="event">Événement privé</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date souhaitée</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+        </form>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Avis Clients</h2>
+        <div class="testimonials-slider">
+            <div class="testimonial active">
+                <img src="https://via.placeholder.com/100" alt="Client 1">
+                <p>"Photos exceptionnelles! JOJO UP a capturé des moments uniques."</p>
+                <div class="stars">★★★★★</div>
+                <span>- Marie D.</span>
+            </div>
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/100" alt="Client 2">
+                <p>"Professionnel et créatif. Je recommande vivement!"</p>
+                <div class="stars">★★★★★</div>
+                <span>- Jean P.</span>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-testimonial"><</button>
+            <button class="next-testimonial">></button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Port-au-Prince, Haïti (réservation uniquement)</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:contact@jojoup.com">contact@jojoup.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/509XXXXXXXX">+509 XX XX XXXX</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <a href="https://instagram.com/jojoup">@jojoup</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">JOJO UP</div>
+            <div class="footer-links">
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#booking">Réservation</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Designé par Deepseek | © JOJO UP 2025</p>
+            <div class="legal-links">
+                <a href="#">Mentions légales</a>
+                <a href="#">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
